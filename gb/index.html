@@ -27,12 +27,12 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   
   <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
-  
+  <link href="css/agency.min.css" rel="stylesheet"> 
 </head>
 
 <body id="page-top">
-
+  <img src="./img/head_green.jpg" style="display:none;" alt="" />
+  <img src="./img/head_red.jpg" style="display:none;" alt="" />
   <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -54,20 +54,39 @@
   <!-- Header -->
   <br>
   <br>
-  <header class="masthead">
+  <header class="masthead" id="headerimg" data-toggle="modal" data-target="#exampleModalCenter" style="margin:0px;padding:0px;">
     <div class="container">
       <div class="intro-text">
       </div>
     </div>
 
   </header>
-        <div class="col-lg-12 text-center">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/header-bg.gif" alt="gb9gif" width="100%"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" onclick="location.href='https://lihi1.com/OK9Zj/windyanimal'">เกมตกปลายิงทั้งหมดอยู่ที่นี่<br>
+          ลงทะเบียนฟรี 200 บาท<br></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+        <!-- <div class="col-lg-12 text-center">
         <button class="btn btn-lg btn-success btn-block" style="font-size:20px; margin-top: 30px;" onclick="location.href='https://lihi1.com/OK9Zj/windyanimal'"> 
            เกมตกปลายิงทั้งหมดอยู่ที่นี่<br>
-          <!-- หมุนและรับโบนัสพิเศษ!!  -->
           ลงทะเบียนฟรี 200 บาท<br>
         </button>
-        </div>
+        </div> -->
 
   <!-- Portfolio Grid -->
   <section class="bg-light page-section" id="portfolio">
@@ -371,6 +390,24 @@
 	
   </div>
 
+  <script>
+    // document.getElementById("headerimg").style.backgroundImage = "url(./img/head_green.jpg)";
+    var curIndex=0;
+    var timeInterval=500;
+    var arr=new Array();
+    arr[0]="./img/head_green.jpg"; 
+    arr[1]="./img/head_red.jpg";
+    setInterval(changeImg,timeInterval);
+    function changeImg(){   
+      console.log('change2')
+      var obj=document.getElementById("headerimg");   
+      if(curIndex==arr.length-1){curIndex=0;}   
+      else{curIndex+=1;}   
+      obj.style.backgroundImage = "url("+arr[curIndex]+")";}
+    
+    // console.log('change')
+  </script>  
+  
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -384,7 +421,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
-
 </body>
 
 </html>
