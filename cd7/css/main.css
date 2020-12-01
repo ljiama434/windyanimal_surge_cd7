@@ -9,7 +9,7 @@ h2{font-size: 14px; line-height: 18px}
 .bg-s{float: left; width:100%; background:url("../images/bg-s.jpg") repeat}
 .title_bg{float: left; width:100%; height: auto; margin-top: 0%; background: url("../images/bg_01.jpg") no-repeat; background-size: 100%; padding-bottom: 0.8%;}
 .btn_top{width:49px;height: 85px; z-index: 9999; position: fixed; bottom: 20px; right: 26px}
-.btn_video{float: right; width: 30%; position: relative; margin-top: 20%; right:15%}
+.btn_video{float: right; width: 30%; position: relative; margin-top: 20%; right:12%}
 .btn_video img{width: 100%; display: block}
 .banner_bg{float: left; width:80%; height: auto; background: url("../images/bg_02.jpg") no-repeat; background-position: top; background-size: 100%; padding: 0% 10%; margin-top: -16.2%;}
 .banner{float: left; width: 96%; border: 1px solid #FFFFFF; background-color:rgba(0, 0, 0, 0.4); padding: 2% ;margin-top: 15%;}

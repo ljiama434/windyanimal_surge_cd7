@@ -14,7 +14,7 @@
 //             content:'images/video.mp4',
 //             btn:['Click Here!! ลงทะเบียนเพื่อส่ง 300THB'],
 //             yes: function(index, layero){
-//                 window.location="https://lin.ee/fRWvU0a";
+//                 window.location="https://lin.ee/4r73gRy";
 //             }
 //         });
 //         return false;
